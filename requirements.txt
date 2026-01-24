@@ -5,4 +5,3 @@ torchvision==0.15.2
 pillow==10.0.0
 huggingface_hub==0.16.4
 rembg>=2.0.62
-
