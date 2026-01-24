@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Image Studio</title>
+    <link rel="stylesheet" href="../static/main.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <!-- Header section with title and Contact Us button -->
+    <header class="header">
+        <h2 class="header-title">AI Image Studio</h2>
+        <a href="{{ url_for('contact') }}" class="contact-link">
+            <button class="btn contact-btn">Contact Us</button>
+        </a>
+    </header>
+
+    <div class="container">
+        <div class="section bg-removal-section">
+            <h3>Remove Background</h3>
+            <form action="/remove_bg" method="post" enctype="multipart/form-data" class="form">
+                <input type="file" name="image" required class="file-input">
+                <button type="submit" class="btn submit-btn">Remove Background</button>
+            </form>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section enhancer-section">
+            <h3>Image Enhancer</h3>
+            <form action="/enhance_image" method="post" enctype="multipart/form-data" class="form">
+                <input type="file" name="image" required class="file-input">
+                <button type="submit" class="btn submit-btn">Enhance Image</button>
+            </form>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Placeholder for displaying the generated image and download button (appears only after processing) -->
+        {% if image_data %}
+        <div class="section result-section">
+            <h3>Generated Image</h3>
+            <img src="data:image/{{ image_type }};base64,{{ image_data }}" alt="Generated Image" class="generated-image">
+            <br><br>
+            <a href="data:image/{{ image_type }};base64,{{ image_data }}" download="generated_image.{{ image_type }}" class="download-link">
+                <button class="btn download-btn">Download Image</button>
+            </a>
+        </div>
+        <hr class="divider">
+        {% endif %}
+
+        <!-- Error message placeholder (if something goes wrong) -->
+        {% if error %}
+        <div class="section error-section">
+            <p class="error-message">{{ error }}</p>
+        </div>
+        <hr class="divider">
+        {% endif %}
+
+        <div class="section ghibli-section">
+            <h3>Ghibli Style Image</h3>
+            <iframe
+                src="https://a57ca51a22068a78ee.gradio.live" 
+                width="100%"
+                height="400px"
+                class="ghibli-iframe">
+            </iframe>
+        </div>
+    </div>
+
+    <script src="../static/main.js"></script> <!-- Link to JS file -->
+</body>
+</html>

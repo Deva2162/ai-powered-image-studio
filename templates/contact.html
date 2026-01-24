@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Devendra Dhote</h1>
+        <p class="header-subtitle">Discover more about Devendra Dhote and get in touch!</p>
+    </header>
+
+    <div class="container">
+        <!-- Photo Section -->
+        <div class="photo-section section">
+            <img src="{{ url_for('static', filename='photo.jpeg') }}" alt="Profile Photo of Devendra Dhote" class="profile-photo">
+        </div>
+
+        <!-- About Section -->
+        <div class="section about-section">
+            <h2>About Me</h2>
+            <p>A motivated and detail-oriented IT graduate seeking an opportunity in the IT industry to utilize my skills in web development and software technologies while continuously learning and growing professionally.</p>
+            <p><strong>Location:</strong> Yavatmal, Maharashtra</p>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section experience-section">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>IT Trainer</strong> at School of Scholars, Yavatmal - June 2025 – Present<br>
+                    - Teaching Artificial Intelligence basics and MS Office tools.<br>
+                    - Assisting students with software usage and troubleshooting.<br>
+                    - Using technology-enabled teaching methods.</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section projects-section">
+            <h2>Academic Projects</h2>
+            <ul>
+                <li><strong>Telemedicine Platform (Major Project)</strong> - Aug 2024 – Feb 2025<br>
+                    - Developed a cloud-based telemedicine platform for remote patient consultations.<br>
+                    - Implemented real-time video conferencing using WebRTC / AWS Chime SDK.<br>
+                    - Gained exposure to application architecture, cloud systems, and real-world IT workflows.</li>
+                <li><strong>Online Exam Form Submission System (Web Project)</strong> - Aug 2023<br>
+                    - Designed a web-based platform to automate exam registration processes.<br>
+                    - Reduced manual workload through digital form submission and validation.<br>
+                    - Implemented frontend logic using HTML, CSS.</li>
+            </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section skills-section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> JavaScript</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, React.js</li>
+                <li><strong>Backend Technologies:</strong> Node.js, Express.js</li>
+                <li><strong>Operating System:</strong> Windows</li>
+                <li><strong>Tools:</strong> MS Word, Excel, PowerPoint</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section education-section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Computer Engineering</strong> - Sant Gadage Baba Amravati University, Maharashtra<br>
+                    Cumulative CGPA: 8.2 | May 2025</li>
+                <li><strong>Higher Secondary Certificate (HSC) 12th</strong> - Late B.N.C Junior College Jalalkheda, Maharashtra<br>
+                    Percentage: 75.83% | 2021</li>
+                <li><strong>Secondary School Certificate (SSC) 10th</strong> - R. G. Deshmukh Krushi Vidyalay Wathoda, Maharashtra<br>
+                    Percentage: 69.20% | 2019</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section contact-section">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:devendradhote32@gmail.com">devendradhote32@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 7620824051</p>
+        </div>
+
+        <!-- Back Button -->
+        <div class="back-button">
+            <a href="index.html"> <!-- Adjust if your main file has a different name -->
+                <button class="btn">Back to AI Image Studio</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='contact.js') }}"></script> <!-- Link to JS file -->
+</body>
+</html>
