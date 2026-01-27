@@ -69,7 +69,7 @@ This project is designed for **learning, demonstration, and resume projects** an
 
 **Devendra Dhote**
 Email: [devendradhote32@gmail.com](mailto:devendradhote32@gmail.com)
-Mobil: +91 7920824051
+Mobile No: +91 7920824051
 
 ---
 
