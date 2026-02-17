@@ -21,7 +21,7 @@ def remove_bg():
             "https://api.remove.bg/v1.0/removebg",
             files={"image_file": file},
             data={"size": "auto"},
-            headers={"X-Api-Key": "REMOVE_BG_KEY"},  # replace with your key
+            headers={"X-Api-Key": os.environ.get("REMOVE_BG_KEY")}  # replace with your key
         )
 
         if response.status_code == 200:
@@ -102,6 +102,7 @@ def contact():
 if __name__ == "__main__":
     app.run()
 # if __name__ == "__main__":
+
 
 
 
