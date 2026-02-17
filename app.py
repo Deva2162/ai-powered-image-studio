@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template, send_file
-from rembg import remove
 from PIL import Image
 import io
 import base64  # Added for encoding images to display them inline
@@ -103,6 +102,7 @@ def contact():
 if __name__ == "__main__":
     app.run()
 # if __name__ == "__main__":
+
 
 
 
