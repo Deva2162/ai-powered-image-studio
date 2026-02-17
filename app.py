@@ -3,6 +3,7 @@ from PIL import Image
 import io
 import base64  # Added for encoding images to display them inline
 import os
+import requests
 
 app = Flask(__name__)
 
@@ -102,6 +103,7 @@ def contact():
 if __name__ == "__main__":
     app.run()
 # if __name__ == "__main__":
+
 
 
 
