@@ -10,6 +10,27 @@ body {
     overflow-x: hidden;
 }
 
+/* Base styling for the logo box */
+.creator-logo {
+    position: absolute; /* Positions it within the header without affecting other elements */
+    top: 10px; /* Vertical offset from header top */
+    right: 120px; /* Horizontal offset from header right (leaves space for the contact button) */
+    background-color: #f0f0f0; /* Light background; customize to match your theme */
+    color: #333; /* Text color */
+    padding: 8px 12px; /* Internal spacing */
+    border-radius: 20px; /* Rounded corners for the "box" effect */
+    font-size: 14px; /* Text size */
+    font-weight: bold; /* Emphasizes it as a logo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: pointer; /* Indicates interactivity */
+    transition: transform 0.3s ease; /* Smooth animation for hover */
+    z-index: 10; /* Keeps it above other elements if needed */
+}
+
+/* Hover effect: Moves the box right by 20px */
+.creator-logo:hover {
+    transform: translateX(20px); /* Simple slide; no impact on other elements */
+}
 /* Header */
 .header {
     display: flex;

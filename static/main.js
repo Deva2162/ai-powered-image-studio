@@ -1,3 +1,24 @@
+// New addition: Dynamic logo movement on hover – add this to the end of main.js
+
+const logo = document.querySelector('.creator-logo');
+const header = document.querySelector('.header');
+
+logo.addEventListener('mouseenter', () => {
+    // Get dimensions of the header and logo
+    const headerRect = header.getBoundingClientRect();
+    const logoRect = logo.getBoundingClientRect();
+    
+    // Calculate a random position within the header (with margins to avoid edges)
+    const maxX = headerRect.width - logoRect.width - 20;
+    const maxY = headerRect.height - logoRect.height - 20;
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+    
+    // Reposition the logo randomly
+    logo.style.left = `${randomX}px`;
+    logo.style.top = `${randomY}px`;
+    logo.style.right = 'auto'; // Resets the CSS right positioning for dynamic placement
+});
 // JavaScript for scroll-triggered animations and interactivity
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.section');
