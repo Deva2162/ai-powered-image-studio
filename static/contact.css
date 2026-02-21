@@ -13,7 +13,7 @@ body {
 .header {
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    background: linear-gradient(135deg, #6a0dad 0%, #ff1493 100%);
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: fadeInDown 1s ease-out;
@@ -62,16 +62,16 @@ body {
 }
 
 .section h2 {
-    color: #007bff;
+    color: #ff1493;
     margin-bottom: 15px;
     font-size: 1.8em;
-    border-bottom: 3px solid #007bff;
+    border-bottom: 3px solid #ff1493;
     padding-bottom: 5px;
     transition: color 0.3s ease;
 }
 
 .section h2:hover {
-    color: #0056b3;
+    color: #d72584;
 }
 
 /* Photo Section */
