@@ -49,7 +49,7 @@ This project is designed for **learning, demonstration, and resume projects** an
 
 ## 📸 Output Screenshots
 
-![../static/output1.png ](../static/output1.png)
+![../static/output1.png ](static/output1.png)
 ![Background Removal]()
 ![Ghibli Style Output]()
 
