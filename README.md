@@ -53,8 +53,12 @@ This project is designed for **learning, demonstration, and resume projects** an
   <b>Front Page</b><br>
   <img src="static/ootput1.png" width="600"/>
 </p>
-![Background Removal](static/output2.png)
-![Ghibli Style Output]()
+<br/>
+<p align="center">
+  <b>Background remove</b><br>
+  <img src="static/output2.png" width="600"/>
+</p>
+
 
 
 ---
