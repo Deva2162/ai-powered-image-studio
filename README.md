@@ -1,101 +1,100 @@
-# ai-powered-image-studio
-# AI Image Studio
+# AI-Powered Image Studio – Background Remover & Ghibli Style Generator
 
-A simple yet powerful **AI-based Image Processing project** built using **Flask + Gradio**.
-This project provides two main AI features:
+AI-Powered Image Studio is a simple yet powerful AI-based image processing web application built using Flask and Gradio.  
+It combines lightweight background removal with experimental AI-style image generation in a clean and beginner-friendly project structure.
 
-1. **Background Remover** (Runs locally using Flask)
-2. **Ghibli Style Image Generator** (Runs using Gradio)
-
-This project is designed for **learning, demonstration, and resume projects** and works well on **low to mid-range laptops**.
+This project is ideal for learning, demonstrations, and resume showcasing, and it runs smoothly on low to mid-range laptops.
 
 ---
 
-## Features
+## 🚀 Key Features
 
-* ✔ Upload image and remove background instantly
-* ✔ Generate Ghibli-style images using AI (demo setup)
-* ✔ Clean and simple web interface
-* ✔ Flask backend for local processing
-* ✔ Gradio integration for heavy AI tasks
-* ✔ Beginner-friendly project structure
-
----
-
-## Tech Stack
-
-* **Frontend:** HTML
-* **Backend:** Python, Flask
-* **AI Libraries:** PyTorch, torchvision, rembg
-* **AI UI:** Gradio
-* **Image Processing:** Pillow
+- ✔ Instant background removal using AI
+- ✔ Ghibli-style image generation (demo integration)
+- ✔ Clean and simple web interface
+- ✔ Flask backend for local processing
+- ✔ Gradio integration for AI-heavy tasks
+- ✔ Beginner-friendly architecture
+- ✔ Resume-ready AI project
 
 ---
 
-#
+## 🛠 Tech Stack
+
+**Frontend**
+- HTML
+
+**Backend**
+- Python
+- Flask
+
+**AI & Processing**
+- PyTorch
+- torchvision
+- rembg
+- Pillow
+
+**AI Interface**
+- Gradio
 
 ---
 
-### ▶️ How to Run the Project
+## 📂 Project Modules
 
-### 1️⃣ Create & Activate Virtual Environment
+### 1️⃣ Background Remover (Flask)
+- Runs locally
+- Uses `rembg` for AI background removal
+- Fast and lightweight processing
 
-### 2️⃣ Install Dependencies
+### 2️⃣ Ghibli Style Generator (Gradio)
+- Demonstration-based AI style generator
+- Uses Gradio for interactive UI
+- Public links are temporary
 
-### 3️⃣ Run Flask App (Background Remover)
+---
 
-## Run Ghibli Style Generator 
+## ▶️ How to Run the Project
 
-
-## 📸 Output Screenshots
-
+### 1️Create & Activate Virtual Environment
+📸 Output Screenshots
 <p align="center">
   <b>Front Page</b><br>
   <img src="static/ootput1.png" width="600"/>
 </p>
 <br/>
 <p align="center">
-  <b>Background remove</b><br>
+  <b>Background Remove</b><br>
   <img src="static/output2.png" width="600"/>
 </p>
-
-
-
 ---
+## ⚠ Important Notes
 
-## Important Notes
-
-* Gradio public links are **temporary**
-* Every time Gradio restarts, a **new link** is generated
-* Flask app runs locally and is **permanent**
-* Ghibli style generation here is a **placeholder**
-
----
-
-## 👤 Author
-
-**Devendra Dhote**
-Email: [devendradhote32@gmail.com](mailto:devendradhote32@gmail.com)
-Mobile No: +91 7920824051
-
----
-
-## 📄 License
-
-This project is for **educational and learning purposes**.
-You are free to modify and extend it.
+- Gradio public links are temporary  
+- A new link is generated after every restart  
+- Flask app runs locally and remains stable  
+- Ghibli-style generation is currently a demo placeholder  
 
 ---
 
 ## 🌟 Future Improvements
 
-* Real Ghibli-style diffusion model integration
-* Single-server Flask + AI pipeline
-* Better UI with CSS / Tailwind
-* Download button for generated images
+- Integration of real diffusion-based Ghibli model  
+- Single unified Flask + AI pipeline  
+- Enhanced UI using CSS or Tailwind  
+- Image download functionality  
+- Cloud deployment support  
 
 ---
 
-### ⭐ If you like this project, feel free to give it a star on GitHub!
+## 👤 Author
 
-Happy Coding 🚀
+**Devendra Dhote**  
+📧 devendradhote32@gmail.com  
+📱 +91 7920824051  
+
+---
+
+## 📄 License
+
+This project is created for educational and learning purposes.  
+You are free to modify, enhance, and build upon it.
